@@ -3936,15 +3936,15 @@ pub struct PORT1 {
 unsafe impl Send for PORT1 {}
 impl PORT1 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port1::RegisterBlock = 0x4802_8100 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8100 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port1::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT1 {
-    type Target = port1::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -3955,8 +3955,6 @@ impl core::fmt::Debug for PORT1 {
         f.debug_struct("PORT1").finish()
     }
 }
-#[doc = "Port 1"]
-pub mod port1;
 #[doc = "Port 2"]
 pub struct PORT2 {
     _marker: PhantomData<*const ()>,
@@ -3964,15 +3962,15 @@ pub struct PORT2 {
 unsafe impl Send for PORT2 {}
 impl PORT2 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port2::RegisterBlock = 0x4802_8200 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8200 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port2::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT2 {
-    type Target = port2::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -3983,8 +3981,6 @@ impl core::fmt::Debug for PORT2 {
         f.debug_struct("PORT2").finish()
     }
 }
-#[doc = "Port 2"]
-pub mod port2;
 #[doc = "Port 3"]
 pub struct PORT3 {
     _marker: PhantomData<*const ()>,
@@ -3992,15 +3988,15 @@ pub struct PORT3 {
 unsafe impl Send for PORT3 {}
 impl PORT3 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port3::RegisterBlock = 0x4802_8300 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8300 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port3::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT3 {
-    type Target = port3::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -4011,8 +4007,6 @@ impl core::fmt::Debug for PORT3 {
         f.debug_struct("PORT3").finish()
     }
 }
-#[doc = "Port 3"]
-pub mod port3;
 #[doc = "Port 4"]
 pub struct PORT4 {
     _marker: PhantomData<*const ()>,
@@ -4020,15 +4014,15 @@ pub struct PORT4 {
 unsafe impl Send for PORT4 {}
 impl PORT4 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port4::RegisterBlock = 0x4802_8400 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8400 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port4::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT4 {
-    type Target = port4::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -4039,8 +4033,6 @@ impl core::fmt::Debug for PORT4 {
         f.debug_struct("PORT4").finish()
     }
 }
-#[doc = "Port 4"]
-pub mod port4;
 #[doc = "Port 5"]
 pub struct PORT5 {
     _marker: PhantomData<*const ()>,
@@ -4048,15 +4040,15 @@ pub struct PORT5 {
 unsafe impl Send for PORT5 {}
 impl PORT5 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port5::RegisterBlock = 0x4802_8500 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8500 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port5::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT5 {
-    type Target = port5::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -4067,8 +4059,6 @@ impl core::fmt::Debug for PORT5 {
         f.debug_struct("PORT5").finish()
     }
 }
-#[doc = "Port 5"]
-pub mod port5;
 #[doc = "Port 6"]
 pub struct PORT6 {
     _marker: PhantomData<*const ()>,
@@ -4076,15 +4066,15 @@ pub struct PORT6 {
 unsafe impl Send for PORT6 {}
 impl PORT6 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port6::RegisterBlock = 0x4802_8600 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8600 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port6::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT6 {
-    type Target = port6::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -4095,8 +4085,6 @@ impl core::fmt::Debug for PORT6 {
         f.debug_struct("PORT6").finish()
     }
 }
-#[doc = "Port 6"]
-pub mod port6;
 #[doc = "Port 7"]
 pub struct PORT7 {
     _marker: PhantomData<*const ()>,
@@ -4104,15 +4092,15 @@ pub struct PORT7 {
 unsafe impl Send for PORT7 {}
 impl PORT7 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port7::RegisterBlock = 0x4802_8700 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8700 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port7::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT7 {
-    type Target = port7::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -4123,8 +4111,6 @@ impl core::fmt::Debug for PORT7 {
         f.debug_struct("PORT7").finish()
     }
 }
-#[doc = "Port 7"]
-pub mod port7;
 #[doc = "Port 8"]
 pub struct PORT8 {
     _marker: PhantomData<*const ()>,
@@ -4132,15 +4118,15 @@ pub struct PORT8 {
 unsafe impl Send for PORT8 {}
 impl PORT8 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port8::RegisterBlock = 0x4802_8800 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8800 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port8::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT8 {
-    type Target = port8::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -4151,8 +4137,6 @@ impl core::fmt::Debug for PORT8 {
         f.debug_struct("PORT8").finish()
     }
 }
-#[doc = "Port 8"]
-pub mod port8;
 #[doc = "Port 9"]
 pub struct PORT9 {
     _marker: PhantomData<*const ()>,
@@ -4160,15 +4144,15 @@ pub struct PORT9 {
 unsafe impl Send for PORT9 {}
 impl PORT9 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port9::RegisterBlock = 0x4802_8900 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8900 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port9::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT9 {
-    type Target = port9::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -4179,8 +4163,6 @@ impl core::fmt::Debug for PORT9 {
         f.debug_struct("PORT9").finish()
     }
 }
-#[doc = "Port 9"]
-pub mod port9;
 #[doc = "Port 14"]
 pub struct PORT14 {
     _marker: PhantomData<*const ()>,
@@ -4188,15 +4170,15 @@ pub struct PORT14 {
 unsafe impl Send for PORT14 {}
 impl PORT14 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port14::RegisterBlock = 0x4802_8e00 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8e00 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port14::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT14 {
-    type Target = port14::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -4207,8 +4189,6 @@ impl core::fmt::Debug for PORT14 {
         f.debug_struct("PORT14").finish()
     }
 }
-#[doc = "Port 14"]
-pub mod port14;
 #[doc = "Port 15"]
 pub struct PORT15 {
     _marker: PhantomData<*const ()>,
@@ -4216,15 +4196,15 @@ pub struct PORT15 {
 unsafe impl Send for PORT15 {}
 impl PORT15 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const port15::RegisterBlock = 0x4802_8f00 as *const _;
+    pub const PTR: *const port0::RegisterBlock = 0x4802_8f00 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const port15::RegisterBlock {
+    pub const fn ptr() -> *const port0::RegisterBlock {
         Self::PTR
     }
 }
 impl Deref for PORT15 {
-    type Target = port15::RegisterBlock;
+    type Target = port0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
@@ -4235,8 +4215,6 @@ impl core::fmt::Debug for PORT15 {
         f.debug_struct("PORT15").finish()
     }
 }
-#[doc = "Port 15"]
-pub mod port15;
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
 #[doc = r"All the peripherals"]

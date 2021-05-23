@@ -32,182 +32,10 @@ impl core::convert::From<crate::W<IOCR8_SPEC>> for W {
         W(writer)
     }
 }
-#[doc = "Port Control for Port n Pin 8 to 11\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
-#[repr(u8)]
-pub enum PC8_A {
-    #[doc = "0: Input - No internal pull device active"]
-    VALUE1 = 0,
-    #[doc = "1: Input - Internal pull-down device active"]
-    VALUE2 = 1,
-    #[doc = "2: Input - Internal pull-up device active"]
-    VALUE3 = 2,
-    #[doc = "3: Input - No internal pull device, Pn_OUTx = input value"]
-    VALUE4 = 3,
-    #[doc = "4: Input inverted - No internal pull device active"]
-    VALUE5 = 4,
-    #[doc = "5: Input inverted - Internal pull-down device active"]
-    VALUE6 = 5,
-    #[doc = "6: Input inverted - Internal pull-up device active"]
-    VALUE7 = 6,
-    #[doc = "7: Input inverted - No internal pull device, Pn_OUTx = input value"]
-    VALUE8 = 7,
-    #[doc = "16: Output Push-Pull - General-purpose output"]
-    VALUE9 = 16,
-    #[doc = "17: Output Push-Pull - Alternate output function 1"]
-    VALUE10 = 17,
-    #[doc = "18: Output Push-Pull - Alternate output function 2"]
-    VALUE11 = 18,
-    #[doc = "19: Output Push-Pull - Alternate output function 3"]
-    VALUE12 = 19,
-    #[doc = "20: Output Push-Pull - Alternate output function 4"]
-    VALUE13 = 20,
-    #[doc = "24: Output Open Drain - General-purpose output"]
-    VALUE14 = 24,
-    #[doc = "25: Output Open Drain - Alternate output function 1"]
-    VALUE15 = 25,
-    #[doc = "26: Output Open Drain - Alternate output function 2"]
-    VALUE16 = 26,
-    #[doc = "27: Output Open Drain - Alternate output function 3"]
-    VALUE17 = 27,
-    #[doc = "28: Output Open Drain - Alternate output function 4"]
-    VALUE18 = 28,
-}
-impl From<PC8_A> for u8 {
-    #[inline(always)]
-    fn from(variant: PC8_A) -> Self {
-        variant as _
-    }
-}
+#[doc = "Port Control for Port n Pin 8 to 11"]
+pub type PC8_A = super::iocr0::PC0_A;
 #[doc = "Field `PC8` reader - Port Control for Port n Pin 8 to 11"]
-pub struct PC8_R(crate::FieldReader<u8, PC8_A>);
-impl PC8_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PC8_R(crate::FieldReader::new(bits))
-    }
-    #[doc = r"Get enumerated values variant"]
-    #[inline(always)]
-    pub fn variant(&self) -> Option<PC8_A> {
-        match self.bits {
-            0 => Some(PC8_A::VALUE1),
-            1 => Some(PC8_A::VALUE2),
-            2 => Some(PC8_A::VALUE3),
-            3 => Some(PC8_A::VALUE4),
-            4 => Some(PC8_A::VALUE5),
-            5 => Some(PC8_A::VALUE6),
-            6 => Some(PC8_A::VALUE7),
-            7 => Some(PC8_A::VALUE8),
-            16 => Some(PC8_A::VALUE9),
-            17 => Some(PC8_A::VALUE10),
-            18 => Some(PC8_A::VALUE11),
-            19 => Some(PC8_A::VALUE12),
-            20 => Some(PC8_A::VALUE13),
-            24 => Some(PC8_A::VALUE14),
-            25 => Some(PC8_A::VALUE15),
-            26 => Some(PC8_A::VALUE16),
-            27 => Some(PC8_A::VALUE17),
-            28 => Some(PC8_A::VALUE18),
-            _ => None,
-        }
-    }
-    #[doc = "Checks if the value of the field is `VALUE1`"]
-    #[inline(always)]
-    pub fn is_value1(&self) -> bool {
-        **self == PC8_A::VALUE1
-    }
-    #[doc = "Checks if the value of the field is `VALUE2`"]
-    #[inline(always)]
-    pub fn is_value2(&self) -> bool {
-        **self == PC8_A::VALUE2
-    }
-    #[doc = "Checks if the value of the field is `VALUE3`"]
-    #[inline(always)]
-    pub fn is_value3(&self) -> bool {
-        **self == PC8_A::VALUE3
-    }
-    #[doc = "Checks if the value of the field is `VALUE4`"]
-    #[inline(always)]
-    pub fn is_value4(&self) -> bool {
-        **self == PC8_A::VALUE4
-    }
-    #[doc = "Checks if the value of the field is `VALUE5`"]
-    #[inline(always)]
-    pub fn is_value5(&self) -> bool {
-        **self == PC8_A::VALUE5
-    }
-    #[doc = "Checks if the value of the field is `VALUE6`"]
-    #[inline(always)]
-    pub fn is_value6(&self) -> bool {
-        **self == PC8_A::VALUE6
-    }
-    #[doc = "Checks if the value of the field is `VALUE7`"]
-    #[inline(always)]
-    pub fn is_value7(&self) -> bool {
-        **self == PC8_A::VALUE7
-    }
-    #[doc = "Checks if the value of the field is `VALUE8`"]
-    #[inline(always)]
-    pub fn is_value8(&self) -> bool {
-        **self == PC8_A::VALUE8
-    }
-    #[doc = "Checks if the value of the field is `VALUE9`"]
-    #[inline(always)]
-    pub fn is_value9(&self) -> bool {
-        **self == PC8_A::VALUE9
-    }
-    #[doc = "Checks if the value of the field is `VALUE10`"]
-    #[inline(always)]
-    pub fn is_value10(&self) -> bool {
-        **self == PC8_A::VALUE10
-    }
-    #[doc = "Checks if the value of the field is `VALUE11`"]
-    #[inline(always)]
-    pub fn is_value11(&self) -> bool {
-        **self == PC8_A::VALUE11
-    }
-    #[doc = "Checks if the value of the field is `VALUE12`"]
-    #[inline(always)]
-    pub fn is_value12(&self) -> bool {
-        **self == PC8_A::VALUE12
-    }
-    #[doc = "Checks if the value of the field is `VALUE13`"]
-    #[inline(always)]
-    pub fn is_value13(&self) -> bool {
-        **self == PC8_A::VALUE13
-    }
-    #[doc = "Checks if the value of the field is `VALUE14`"]
-    #[inline(always)]
-    pub fn is_value14(&self) -> bool {
-        **self == PC8_A::VALUE14
-    }
-    #[doc = "Checks if the value of the field is `VALUE15`"]
-    #[inline(always)]
-    pub fn is_value15(&self) -> bool {
-        **self == PC8_A::VALUE15
-    }
-    #[doc = "Checks if the value of the field is `VALUE16`"]
-    #[inline(always)]
-    pub fn is_value16(&self) -> bool {
-        **self == PC8_A::VALUE16
-    }
-    #[doc = "Checks if the value of the field is `VALUE17`"]
-    #[inline(always)]
-    pub fn is_value17(&self) -> bool {
-        **self == PC8_A::VALUE17
-    }
-    #[doc = "Checks if the value of the field is `VALUE18`"]
-    #[inline(always)]
-    pub fn is_value18(&self) -> bool {
-        **self == PC8_A::VALUE18
-    }
-}
-impl core::ops::Deref for PC8_R {
-    type Target = crate::FieldReader<u8, PC8_A>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PC8_R = super::iocr0::PC0_R;
 #[doc = "Field `PC8` writer - Port Control for Port n Pin 8 to 11"]
 pub struct PC8_W<'a> {
     w: &'a mut W,
@@ -220,93 +48,93 @@ impl<'a> PC8_W<'a> {
     }
     #[doc = "Input - No internal pull device active"]
     #[inline(always)]
-    pub fn value1(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE1)
+    pub fn input(self) -> &'a mut W {
+        self.variant(PC8_A::INPUT)
     }
     #[doc = "Input - Internal pull-down device active"]
     #[inline(always)]
-    pub fn value2(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE2)
+    pub fn input_pulldown(self) -> &'a mut W {
+        self.variant(PC8_A::INPUT_PULLDOWN)
     }
     #[doc = "Input - Internal pull-up device active"]
     #[inline(always)]
-    pub fn value3(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE3)
+    pub fn input_pullup(self) -> &'a mut W {
+        self.variant(PC8_A::INPUT_PULLUP)
     }
     #[doc = "Input - No internal pull device, Pn_OUTx = input value"]
     #[inline(always)]
-    pub fn value4(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE4)
+    pub fn input_sampled(self) -> &'a mut W {
+        self.variant(PC8_A::INPUT_SAMPLED)
     }
     #[doc = "Input inverted - No internal pull device active"]
     #[inline(always)]
-    pub fn value5(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE5)
+    pub fn input_inv(self) -> &'a mut W {
+        self.variant(PC8_A::INPUT_INV)
     }
     #[doc = "Input inverted - Internal pull-down device active"]
     #[inline(always)]
-    pub fn value6(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE6)
+    pub fn input_inv_pulldown(self) -> &'a mut W {
+        self.variant(PC8_A::INPUT_INV_PULLDOWN)
     }
     #[doc = "Input inverted - Internal pull-up device active"]
     #[inline(always)]
-    pub fn value7(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE7)
+    pub fn input_inv_pullup(self) -> &'a mut W {
+        self.variant(PC8_A::INPUT_INV_PULLUP)
     }
     #[doc = "Input inverted - No internal pull device, Pn_OUTx = input value"]
     #[inline(always)]
-    pub fn value8(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE8)
+    pub fn input_inv_sampled(self) -> &'a mut W {
+        self.variant(PC8_A::INPUT_INV_SAMPLED)
     }
     #[doc = "Output Push-Pull - General-purpose output"]
     #[inline(always)]
-    pub fn value9(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE9)
+    pub fn output(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT)
     }
     #[doc = "Output Push-Pull - Alternate output function 1"]
     #[inline(always)]
-    pub fn value10(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE10)
+    pub fn output_af1(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT_AF1)
     }
     #[doc = "Output Push-Pull - Alternate output function 2"]
     #[inline(always)]
-    pub fn value11(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE11)
+    pub fn output_af2(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT_AF2)
     }
     #[doc = "Output Push-Pull - Alternate output function 3"]
     #[inline(always)]
-    pub fn value12(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE12)
+    pub fn output_af3(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT_AF3)
     }
     #[doc = "Output Push-Pull - Alternate output function 4"]
     #[inline(always)]
-    pub fn value13(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE13)
+    pub fn output_af4(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT_AF4)
     }
     #[doc = "Output Open Drain - General-purpose output"]
     #[inline(always)]
-    pub fn value14(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE14)
+    pub fn output_od(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT_OD)
     }
     #[doc = "Output Open Drain - Alternate output function 1"]
     #[inline(always)]
-    pub fn value15(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE15)
+    pub fn output_od_af1(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT_OD_AF1)
     }
     #[doc = "Output Open Drain - Alternate output function 2"]
     #[inline(always)]
-    pub fn value16(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE16)
+    pub fn output_od_af2(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT_OD_AF2)
     }
     #[doc = "Output Open Drain - Alternate output function 3"]
     #[inline(always)]
-    pub fn value17(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE17)
+    pub fn output_od_af3(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT_OD_AF3)
     }
     #[doc = "Output Open Drain - Alternate output function 4"]
     #[inline(always)]
-    pub fn value18(self) -> &'a mut W {
-        self.variant(PC8_A::VALUE18)
+    pub fn output_od_af4(self) -> &'a mut W {
+        self.variant(PC8_A::OUTPUT_OD_AF4)
     }
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
@@ -315,182 +143,10 @@ impl<'a> PC8_W<'a> {
         self.w
     }
 }
-#[doc = "Port Control for Port n Pin 8 to 11\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
-#[repr(u8)]
-pub enum PC9_A {
-    #[doc = "0: Input - No internal pull device active"]
-    VALUE1 = 0,
-    #[doc = "1: Input - Internal pull-down device active"]
-    VALUE2 = 1,
-    #[doc = "2: Input - Internal pull-up device active"]
-    VALUE3 = 2,
-    #[doc = "3: Input - No internal pull device, Pn_OUTx = input value"]
-    VALUE4 = 3,
-    #[doc = "4: Input inverted - No internal pull device active"]
-    VALUE5 = 4,
-    #[doc = "5: Input inverted - Internal pull-down device active"]
-    VALUE6 = 5,
-    #[doc = "6: Input inverted - Internal pull-up device active"]
-    VALUE7 = 6,
-    #[doc = "7: Input inverted - No internal pull device, Pn_OUTx = input value"]
-    VALUE8 = 7,
-    #[doc = "16: Output Push-Pull - General-purpose output"]
-    VALUE9 = 16,
-    #[doc = "17: Output Push-Pull - Alternate output function 1"]
-    VALUE10 = 17,
-    #[doc = "18: Output Push-Pull - Alternate output function 2"]
-    VALUE11 = 18,
-    #[doc = "19: Output Push-Pull - Alternate output function 3"]
-    VALUE12 = 19,
-    #[doc = "20: Output Push-Pull - Alternate output function 4"]
-    VALUE13 = 20,
-    #[doc = "24: Output Open Drain - General-purpose output"]
-    VALUE14 = 24,
-    #[doc = "25: Output Open Drain - Alternate output function 1"]
-    VALUE15 = 25,
-    #[doc = "26: Output Open Drain - Alternate output function 2"]
-    VALUE16 = 26,
-    #[doc = "27: Output Open Drain - Alternate output function 3"]
-    VALUE17 = 27,
-    #[doc = "28: Output Open Drain - Alternate output function 4"]
-    VALUE18 = 28,
-}
-impl From<PC9_A> for u8 {
-    #[inline(always)]
-    fn from(variant: PC9_A) -> Self {
-        variant as _
-    }
-}
+#[doc = "Port Control for Port n Pin 8 to 11"]
+pub type PC9_A = super::iocr0::PC0_A;
 #[doc = "Field `PC9` reader - Port Control for Port n Pin 8 to 11"]
-pub struct PC9_R(crate::FieldReader<u8, PC9_A>);
-impl PC9_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PC9_R(crate::FieldReader::new(bits))
-    }
-    #[doc = r"Get enumerated values variant"]
-    #[inline(always)]
-    pub fn variant(&self) -> Option<PC9_A> {
-        match self.bits {
-            0 => Some(PC9_A::VALUE1),
-            1 => Some(PC9_A::VALUE2),
-            2 => Some(PC9_A::VALUE3),
-            3 => Some(PC9_A::VALUE4),
-            4 => Some(PC9_A::VALUE5),
-            5 => Some(PC9_A::VALUE6),
-            6 => Some(PC9_A::VALUE7),
-            7 => Some(PC9_A::VALUE8),
-            16 => Some(PC9_A::VALUE9),
-            17 => Some(PC9_A::VALUE10),
-            18 => Some(PC9_A::VALUE11),
-            19 => Some(PC9_A::VALUE12),
-            20 => Some(PC9_A::VALUE13),
-            24 => Some(PC9_A::VALUE14),
-            25 => Some(PC9_A::VALUE15),
-            26 => Some(PC9_A::VALUE16),
-            27 => Some(PC9_A::VALUE17),
-            28 => Some(PC9_A::VALUE18),
-            _ => None,
-        }
-    }
-    #[doc = "Checks if the value of the field is `VALUE1`"]
-    #[inline(always)]
-    pub fn is_value1(&self) -> bool {
-        **self == PC9_A::VALUE1
-    }
-    #[doc = "Checks if the value of the field is `VALUE2`"]
-    #[inline(always)]
-    pub fn is_value2(&self) -> bool {
-        **self == PC9_A::VALUE2
-    }
-    #[doc = "Checks if the value of the field is `VALUE3`"]
-    #[inline(always)]
-    pub fn is_value3(&self) -> bool {
-        **self == PC9_A::VALUE3
-    }
-    #[doc = "Checks if the value of the field is `VALUE4`"]
-    #[inline(always)]
-    pub fn is_value4(&self) -> bool {
-        **self == PC9_A::VALUE4
-    }
-    #[doc = "Checks if the value of the field is `VALUE5`"]
-    #[inline(always)]
-    pub fn is_value5(&self) -> bool {
-        **self == PC9_A::VALUE5
-    }
-    #[doc = "Checks if the value of the field is `VALUE6`"]
-    #[inline(always)]
-    pub fn is_value6(&self) -> bool {
-        **self == PC9_A::VALUE6
-    }
-    #[doc = "Checks if the value of the field is `VALUE7`"]
-    #[inline(always)]
-    pub fn is_value7(&self) -> bool {
-        **self == PC9_A::VALUE7
-    }
-    #[doc = "Checks if the value of the field is `VALUE8`"]
-    #[inline(always)]
-    pub fn is_value8(&self) -> bool {
-        **self == PC9_A::VALUE8
-    }
-    #[doc = "Checks if the value of the field is `VALUE9`"]
-    #[inline(always)]
-    pub fn is_value9(&self) -> bool {
-        **self == PC9_A::VALUE9
-    }
-    #[doc = "Checks if the value of the field is `VALUE10`"]
-    #[inline(always)]
-    pub fn is_value10(&self) -> bool {
-        **self == PC9_A::VALUE10
-    }
-    #[doc = "Checks if the value of the field is `VALUE11`"]
-    #[inline(always)]
-    pub fn is_value11(&self) -> bool {
-        **self == PC9_A::VALUE11
-    }
-    #[doc = "Checks if the value of the field is `VALUE12`"]
-    #[inline(always)]
-    pub fn is_value12(&self) -> bool {
-        **self == PC9_A::VALUE12
-    }
-    #[doc = "Checks if the value of the field is `VALUE13`"]
-    #[inline(always)]
-    pub fn is_value13(&self) -> bool {
-        **self == PC9_A::VALUE13
-    }
-    #[doc = "Checks if the value of the field is `VALUE14`"]
-    #[inline(always)]
-    pub fn is_value14(&self) -> bool {
-        **self == PC9_A::VALUE14
-    }
-    #[doc = "Checks if the value of the field is `VALUE15`"]
-    #[inline(always)]
-    pub fn is_value15(&self) -> bool {
-        **self == PC9_A::VALUE15
-    }
-    #[doc = "Checks if the value of the field is `VALUE16`"]
-    #[inline(always)]
-    pub fn is_value16(&self) -> bool {
-        **self == PC9_A::VALUE16
-    }
-    #[doc = "Checks if the value of the field is `VALUE17`"]
-    #[inline(always)]
-    pub fn is_value17(&self) -> bool {
-        **self == PC9_A::VALUE17
-    }
-    #[doc = "Checks if the value of the field is `VALUE18`"]
-    #[inline(always)]
-    pub fn is_value18(&self) -> bool {
-        **self == PC9_A::VALUE18
-    }
-}
-impl core::ops::Deref for PC9_R {
-    type Target = crate::FieldReader<u8, PC9_A>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PC9_R = super::iocr0::PC0_R;
 #[doc = "Field `PC9` writer - Port Control for Port n Pin 8 to 11"]
 pub struct PC9_W<'a> {
     w: &'a mut W,
@@ -503,93 +159,93 @@ impl<'a> PC9_W<'a> {
     }
     #[doc = "Input - No internal pull device active"]
     #[inline(always)]
-    pub fn value1(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE1)
+    pub fn input(self) -> &'a mut W {
+        self.variant(PC9_A::INPUT)
     }
     #[doc = "Input - Internal pull-down device active"]
     #[inline(always)]
-    pub fn value2(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE2)
+    pub fn input_pulldown(self) -> &'a mut W {
+        self.variant(PC9_A::INPUT_PULLDOWN)
     }
     #[doc = "Input - Internal pull-up device active"]
     #[inline(always)]
-    pub fn value3(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE3)
+    pub fn input_pullup(self) -> &'a mut W {
+        self.variant(PC9_A::INPUT_PULLUP)
     }
     #[doc = "Input - No internal pull device, Pn_OUTx = input value"]
     #[inline(always)]
-    pub fn value4(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE4)
+    pub fn input_sampled(self) -> &'a mut W {
+        self.variant(PC9_A::INPUT_SAMPLED)
     }
     #[doc = "Input inverted - No internal pull device active"]
     #[inline(always)]
-    pub fn value5(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE5)
+    pub fn input_inv(self) -> &'a mut W {
+        self.variant(PC9_A::INPUT_INV)
     }
     #[doc = "Input inverted - Internal pull-down device active"]
     #[inline(always)]
-    pub fn value6(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE6)
+    pub fn input_inv_pulldown(self) -> &'a mut W {
+        self.variant(PC9_A::INPUT_INV_PULLDOWN)
     }
     #[doc = "Input inverted - Internal pull-up device active"]
     #[inline(always)]
-    pub fn value7(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE7)
+    pub fn input_inv_pullup(self) -> &'a mut W {
+        self.variant(PC9_A::INPUT_INV_PULLUP)
     }
     #[doc = "Input inverted - No internal pull device, Pn_OUTx = input value"]
     #[inline(always)]
-    pub fn value8(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE8)
+    pub fn input_inv_sampled(self) -> &'a mut W {
+        self.variant(PC9_A::INPUT_INV_SAMPLED)
     }
     #[doc = "Output Push-Pull - General-purpose output"]
     #[inline(always)]
-    pub fn value9(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE9)
+    pub fn output(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT)
     }
     #[doc = "Output Push-Pull - Alternate output function 1"]
     #[inline(always)]
-    pub fn value10(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE10)
+    pub fn output_af1(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT_AF1)
     }
     #[doc = "Output Push-Pull - Alternate output function 2"]
     #[inline(always)]
-    pub fn value11(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE11)
+    pub fn output_af2(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT_AF2)
     }
     #[doc = "Output Push-Pull - Alternate output function 3"]
     #[inline(always)]
-    pub fn value12(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE12)
+    pub fn output_af3(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT_AF3)
     }
     #[doc = "Output Push-Pull - Alternate output function 4"]
     #[inline(always)]
-    pub fn value13(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE13)
+    pub fn output_af4(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT_AF4)
     }
     #[doc = "Output Open Drain - General-purpose output"]
     #[inline(always)]
-    pub fn value14(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE14)
+    pub fn output_od(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT_OD)
     }
     #[doc = "Output Open Drain - Alternate output function 1"]
     #[inline(always)]
-    pub fn value15(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE15)
+    pub fn output_od_af1(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT_OD_AF1)
     }
     #[doc = "Output Open Drain - Alternate output function 2"]
     #[inline(always)]
-    pub fn value16(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE16)
+    pub fn output_od_af2(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT_OD_AF2)
     }
     #[doc = "Output Open Drain - Alternate output function 3"]
     #[inline(always)]
-    pub fn value17(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE17)
+    pub fn output_od_af3(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT_OD_AF3)
     }
     #[doc = "Output Open Drain - Alternate output function 4"]
     #[inline(always)]
-    pub fn value18(self) -> &'a mut W {
-        self.variant(PC9_A::VALUE18)
+    pub fn output_od_af4(self) -> &'a mut W {
+        self.variant(PC9_A::OUTPUT_OD_AF4)
     }
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
@@ -598,182 +254,10 @@ impl<'a> PC9_W<'a> {
         self.w
     }
 }
-#[doc = "Port Control for Port n Pin 8 to 11\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
-#[repr(u8)]
-pub enum PC10_A {
-    #[doc = "0: Input - No internal pull device active"]
-    VALUE1 = 0,
-    #[doc = "1: Input - Internal pull-down device active"]
-    VALUE2 = 1,
-    #[doc = "2: Input - Internal pull-up device active"]
-    VALUE3 = 2,
-    #[doc = "3: Input - No internal pull device, Pn_OUTx = input value"]
-    VALUE4 = 3,
-    #[doc = "4: Input inverted - No internal pull device active"]
-    VALUE5 = 4,
-    #[doc = "5: Input inverted - Internal pull-down device active"]
-    VALUE6 = 5,
-    #[doc = "6: Input inverted - Internal pull-up device active"]
-    VALUE7 = 6,
-    #[doc = "7: Input inverted - No internal pull device, Pn_OUTx = input value"]
-    VALUE8 = 7,
-    #[doc = "16: Output Push-Pull - General-purpose output"]
-    VALUE9 = 16,
-    #[doc = "17: Output Push-Pull - Alternate output function 1"]
-    VALUE10 = 17,
-    #[doc = "18: Output Push-Pull - Alternate output function 2"]
-    VALUE11 = 18,
-    #[doc = "19: Output Push-Pull - Alternate output function 3"]
-    VALUE12 = 19,
-    #[doc = "20: Output Push-Pull - Alternate output function 4"]
-    VALUE13 = 20,
-    #[doc = "24: Output Open Drain - General-purpose output"]
-    VALUE14 = 24,
-    #[doc = "25: Output Open Drain - Alternate output function 1"]
-    VALUE15 = 25,
-    #[doc = "26: Output Open Drain - Alternate output function 2"]
-    VALUE16 = 26,
-    #[doc = "27: Output Open Drain - Alternate output function 3"]
-    VALUE17 = 27,
-    #[doc = "28: Output Open Drain - Alternate output function 4"]
-    VALUE18 = 28,
-}
-impl From<PC10_A> for u8 {
-    #[inline(always)]
-    fn from(variant: PC10_A) -> Self {
-        variant as _
-    }
-}
+#[doc = "Port Control for Port n Pin 8 to 11"]
+pub type PC10_A = super::iocr0::PC0_A;
 #[doc = "Field `PC10` reader - Port Control for Port n Pin 8 to 11"]
-pub struct PC10_R(crate::FieldReader<u8, PC10_A>);
-impl PC10_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PC10_R(crate::FieldReader::new(bits))
-    }
-    #[doc = r"Get enumerated values variant"]
-    #[inline(always)]
-    pub fn variant(&self) -> Option<PC10_A> {
-        match self.bits {
-            0 => Some(PC10_A::VALUE1),
-            1 => Some(PC10_A::VALUE2),
-            2 => Some(PC10_A::VALUE3),
-            3 => Some(PC10_A::VALUE4),
-            4 => Some(PC10_A::VALUE5),
-            5 => Some(PC10_A::VALUE6),
-            6 => Some(PC10_A::VALUE7),
-            7 => Some(PC10_A::VALUE8),
-            16 => Some(PC10_A::VALUE9),
-            17 => Some(PC10_A::VALUE10),
-            18 => Some(PC10_A::VALUE11),
-            19 => Some(PC10_A::VALUE12),
-            20 => Some(PC10_A::VALUE13),
-            24 => Some(PC10_A::VALUE14),
-            25 => Some(PC10_A::VALUE15),
-            26 => Some(PC10_A::VALUE16),
-            27 => Some(PC10_A::VALUE17),
-            28 => Some(PC10_A::VALUE18),
-            _ => None,
-        }
-    }
-    #[doc = "Checks if the value of the field is `VALUE1`"]
-    #[inline(always)]
-    pub fn is_value1(&self) -> bool {
-        **self == PC10_A::VALUE1
-    }
-    #[doc = "Checks if the value of the field is `VALUE2`"]
-    #[inline(always)]
-    pub fn is_value2(&self) -> bool {
-        **self == PC10_A::VALUE2
-    }
-    #[doc = "Checks if the value of the field is `VALUE3`"]
-    #[inline(always)]
-    pub fn is_value3(&self) -> bool {
-        **self == PC10_A::VALUE3
-    }
-    #[doc = "Checks if the value of the field is `VALUE4`"]
-    #[inline(always)]
-    pub fn is_value4(&self) -> bool {
-        **self == PC10_A::VALUE4
-    }
-    #[doc = "Checks if the value of the field is `VALUE5`"]
-    #[inline(always)]
-    pub fn is_value5(&self) -> bool {
-        **self == PC10_A::VALUE5
-    }
-    #[doc = "Checks if the value of the field is `VALUE6`"]
-    #[inline(always)]
-    pub fn is_value6(&self) -> bool {
-        **self == PC10_A::VALUE6
-    }
-    #[doc = "Checks if the value of the field is `VALUE7`"]
-    #[inline(always)]
-    pub fn is_value7(&self) -> bool {
-        **self == PC10_A::VALUE7
-    }
-    #[doc = "Checks if the value of the field is `VALUE8`"]
-    #[inline(always)]
-    pub fn is_value8(&self) -> bool {
-        **self == PC10_A::VALUE8
-    }
-    #[doc = "Checks if the value of the field is `VALUE9`"]
-    #[inline(always)]
-    pub fn is_value9(&self) -> bool {
-        **self == PC10_A::VALUE9
-    }
-    #[doc = "Checks if the value of the field is `VALUE10`"]
-    #[inline(always)]
-    pub fn is_value10(&self) -> bool {
-        **self == PC10_A::VALUE10
-    }
-    #[doc = "Checks if the value of the field is `VALUE11`"]
-    #[inline(always)]
-    pub fn is_value11(&self) -> bool {
-        **self == PC10_A::VALUE11
-    }
-    #[doc = "Checks if the value of the field is `VALUE12`"]
-    #[inline(always)]
-    pub fn is_value12(&self) -> bool {
-        **self == PC10_A::VALUE12
-    }
-    #[doc = "Checks if the value of the field is `VALUE13`"]
-    #[inline(always)]
-    pub fn is_value13(&self) -> bool {
-        **self == PC10_A::VALUE13
-    }
-    #[doc = "Checks if the value of the field is `VALUE14`"]
-    #[inline(always)]
-    pub fn is_value14(&self) -> bool {
-        **self == PC10_A::VALUE14
-    }
-    #[doc = "Checks if the value of the field is `VALUE15`"]
-    #[inline(always)]
-    pub fn is_value15(&self) -> bool {
-        **self == PC10_A::VALUE15
-    }
-    #[doc = "Checks if the value of the field is `VALUE16`"]
-    #[inline(always)]
-    pub fn is_value16(&self) -> bool {
-        **self == PC10_A::VALUE16
-    }
-    #[doc = "Checks if the value of the field is `VALUE17`"]
-    #[inline(always)]
-    pub fn is_value17(&self) -> bool {
-        **self == PC10_A::VALUE17
-    }
-    #[doc = "Checks if the value of the field is `VALUE18`"]
-    #[inline(always)]
-    pub fn is_value18(&self) -> bool {
-        **self == PC10_A::VALUE18
-    }
-}
-impl core::ops::Deref for PC10_R {
-    type Target = crate::FieldReader<u8, PC10_A>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PC10_R = super::iocr0::PC0_R;
 #[doc = "Field `PC10` writer - Port Control for Port n Pin 8 to 11"]
 pub struct PC10_W<'a> {
     w: &'a mut W,
@@ -786,93 +270,93 @@ impl<'a> PC10_W<'a> {
     }
     #[doc = "Input - No internal pull device active"]
     #[inline(always)]
-    pub fn value1(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE1)
+    pub fn input(self) -> &'a mut W {
+        self.variant(PC10_A::INPUT)
     }
     #[doc = "Input - Internal pull-down device active"]
     #[inline(always)]
-    pub fn value2(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE2)
+    pub fn input_pulldown(self) -> &'a mut W {
+        self.variant(PC10_A::INPUT_PULLDOWN)
     }
     #[doc = "Input - Internal pull-up device active"]
     #[inline(always)]
-    pub fn value3(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE3)
+    pub fn input_pullup(self) -> &'a mut W {
+        self.variant(PC10_A::INPUT_PULLUP)
     }
     #[doc = "Input - No internal pull device, Pn_OUTx = input value"]
     #[inline(always)]
-    pub fn value4(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE4)
+    pub fn input_sampled(self) -> &'a mut W {
+        self.variant(PC10_A::INPUT_SAMPLED)
     }
     #[doc = "Input inverted - No internal pull device active"]
     #[inline(always)]
-    pub fn value5(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE5)
+    pub fn input_inv(self) -> &'a mut W {
+        self.variant(PC10_A::INPUT_INV)
     }
     #[doc = "Input inverted - Internal pull-down device active"]
     #[inline(always)]
-    pub fn value6(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE6)
+    pub fn input_inv_pulldown(self) -> &'a mut W {
+        self.variant(PC10_A::INPUT_INV_PULLDOWN)
     }
     #[doc = "Input inverted - Internal pull-up device active"]
     #[inline(always)]
-    pub fn value7(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE7)
+    pub fn input_inv_pullup(self) -> &'a mut W {
+        self.variant(PC10_A::INPUT_INV_PULLUP)
     }
     #[doc = "Input inverted - No internal pull device, Pn_OUTx = input value"]
     #[inline(always)]
-    pub fn value8(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE8)
+    pub fn input_inv_sampled(self) -> &'a mut W {
+        self.variant(PC10_A::INPUT_INV_SAMPLED)
     }
     #[doc = "Output Push-Pull - General-purpose output"]
     #[inline(always)]
-    pub fn value9(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE9)
+    pub fn output(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT)
     }
     #[doc = "Output Push-Pull - Alternate output function 1"]
     #[inline(always)]
-    pub fn value10(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE10)
+    pub fn output_af1(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT_AF1)
     }
     #[doc = "Output Push-Pull - Alternate output function 2"]
     #[inline(always)]
-    pub fn value11(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE11)
+    pub fn output_af2(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT_AF2)
     }
     #[doc = "Output Push-Pull - Alternate output function 3"]
     #[inline(always)]
-    pub fn value12(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE12)
+    pub fn output_af3(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT_AF3)
     }
     #[doc = "Output Push-Pull - Alternate output function 4"]
     #[inline(always)]
-    pub fn value13(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE13)
+    pub fn output_af4(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT_AF4)
     }
     #[doc = "Output Open Drain - General-purpose output"]
     #[inline(always)]
-    pub fn value14(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE14)
+    pub fn output_od(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT_OD)
     }
     #[doc = "Output Open Drain - Alternate output function 1"]
     #[inline(always)]
-    pub fn value15(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE15)
+    pub fn output_od_af1(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT_OD_AF1)
     }
     #[doc = "Output Open Drain - Alternate output function 2"]
     #[inline(always)]
-    pub fn value16(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE16)
+    pub fn output_od_af2(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT_OD_AF2)
     }
     #[doc = "Output Open Drain - Alternate output function 3"]
     #[inline(always)]
-    pub fn value17(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE17)
+    pub fn output_od_af3(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT_OD_AF3)
     }
     #[doc = "Output Open Drain - Alternate output function 4"]
     #[inline(always)]
-    pub fn value18(self) -> &'a mut W {
-        self.variant(PC10_A::VALUE18)
+    pub fn output_od_af4(self) -> &'a mut W {
+        self.variant(PC10_A::OUTPUT_OD_AF4)
     }
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
@@ -881,182 +365,10 @@ impl<'a> PC10_W<'a> {
         self.w
     }
 }
-#[doc = "Port Control for Port n Pin 8 to 11\n\nValue on reset: 0"]
-#[derive(Clone, Copy, Debug, PartialEq)]
-#[repr(u8)]
-pub enum PC11_A {
-    #[doc = "0: Input - No internal pull device active"]
-    VALUE1 = 0,
-    #[doc = "1: Input - Internal pull-down device active"]
-    VALUE2 = 1,
-    #[doc = "2: Input - Internal pull-up device active"]
-    VALUE3 = 2,
-    #[doc = "3: Input - No internal pull device, Pn_OUTx = input value"]
-    VALUE4 = 3,
-    #[doc = "4: Input inverted - No internal pull device active"]
-    VALUE5 = 4,
-    #[doc = "5: Input inverted - Internal pull-down device active"]
-    VALUE6 = 5,
-    #[doc = "6: Input inverted - Internal pull-up device active"]
-    VALUE7 = 6,
-    #[doc = "7: Input inverted - No internal pull device, Pn_OUTx = input value"]
-    VALUE8 = 7,
-    #[doc = "16: Output Push-Pull - General-purpose output"]
-    VALUE9 = 16,
-    #[doc = "17: Output Push-Pull - Alternate output function 1"]
-    VALUE10 = 17,
-    #[doc = "18: Output Push-Pull - Alternate output function 2"]
-    VALUE11 = 18,
-    #[doc = "19: Output Push-Pull - Alternate output function 3"]
-    VALUE12 = 19,
-    #[doc = "20: Output Push-Pull - Alternate output function 4"]
-    VALUE13 = 20,
-    #[doc = "24: Output Open Drain - General-purpose output"]
-    VALUE14 = 24,
-    #[doc = "25: Output Open Drain - Alternate output function 1"]
-    VALUE15 = 25,
-    #[doc = "26: Output Open Drain - Alternate output function 2"]
-    VALUE16 = 26,
-    #[doc = "27: Output Open Drain - Alternate output function 3"]
-    VALUE17 = 27,
-    #[doc = "28: Output Open Drain - Alternate output function 4"]
-    VALUE18 = 28,
-}
-impl From<PC11_A> for u8 {
-    #[inline(always)]
-    fn from(variant: PC11_A) -> Self {
-        variant as _
-    }
-}
+#[doc = "Port Control for Port n Pin 8 to 11"]
+pub type PC11_A = super::iocr0::PC0_A;
 #[doc = "Field `PC11` reader - Port Control for Port n Pin 8 to 11"]
-pub struct PC11_R(crate::FieldReader<u8, PC11_A>);
-impl PC11_R {
-    pub(crate) fn new(bits: u8) -> Self {
-        PC11_R(crate::FieldReader::new(bits))
-    }
-    #[doc = r"Get enumerated values variant"]
-    #[inline(always)]
-    pub fn variant(&self) -> Option<PC11_A> {
-        match self.bits {
-            0 => Some(PC11_A::VALUE1),
-            1 => Some(PC11_A::VALUE2),
-            2 => Some(PC11_A::VALUE3),
-            3 => Some(PC11_A::VALUE4),
-            4 => Some(PC11_A::VALUE5),
-            5 => Some(PC11_A::VALUE6),
-            6 => Some(PC11_A::VALUE7),
-            7 => Some(PC11_A::VALUE8),
-            16 => Some(PC11_A::VALUE9),
-            17 => Some(PC11_A::VALUE10),
-            18 => Some(PC11_A::VALUE11),
-            19 => Some(PC11_A::VALUE12),
-            20 => Some(PC11_A::VALUE13),
-            24 => Some(PC11_A::VALUE14),
-            25 => Some(PC11_A::VALUE15),
-            26 => Some(PC11_A::VALUE16),
-            27 => Some(PC11_A::VALUE17),
-            28 => Some(PC11_A::VALUE18),
-            _ => None,
-        }
-    }
-    #[doc = "Checks if the value of the field is `VALUE1`"]
-    #[inline(always)]
-    pub fn is_value1(&self) -> bool {
-        **self == PC11_A::VALUE1
-    }
-    #[doc = "Checks if the value of the field is `VALUE2`"]
-    #[inline(always)]
-    pub fn is_value2(&self) -> bool {
-        **self == PC11_A::VALUE2
-    }
-    #[doc = "Checks if the value of the field is `VALUE3`"]
-    #[inline(always)]
-    pub fn is_value3(&self) -> bool {
-        **self == PC11_A::VALUE3
-    }
-    #[doc = "Checks if the value of the field is `VALUE4`"]
-    #[inline(always)]
-    pub fn is_value4(&self) -> bool {
-        **self == PC11_A::VALUE4
-    }
-    #[doc = "Checks if the value of the field is `VALUE5`"]
-    #[inline(always)]
-    pub fn is_value5(&self) -> bool {
-        **self == PC11_A::VALUE5
-    }
-    #[doc = "Checks if the value of the field is `VALUE6`"]
-    #[inline(always)]
-    pub fn is_value6(&self) -> bool {
-        **self == PC11_A::VALUE6
-    }
-    #[doc = "Checks if the value of the field is `VALUE7`"]
-    #[inline(always)]
-    pub fn is_value7(&self) -> bool {
-        **self == PC11_A::VALUE7
-    }
-    #[doc = "Checks if the value of the field is `VALUE8`"]
-    #[inline(always)]
-    pub fn is_value8(&self) -> bool {
-        **self == PC11_A::VALUE8
-    }
-    #[doc = "Checks if the value of the field is `VALUE9`"]
-    #[inline(always)]
-    pub fn is_value9(&self) -> bool {
-        **self == PC11_A::VALUE9
-    }
-    #[doc = "Checks if the value of the field is `VALUE10`"]
-    #[inline(always)]
-    pub fn is_value10(&self) -> bool {
-        **self == PC11_A::VALUE10
-    }
-    #[doc = "Checks if the value of the field is `VALUE11`"]
-    #[inline(always)]
-    pub fn is_value11(&self) -> bool {
-        **self == PC11_A::VALUE11
-    }
-    #[doc = "Checks if the value of the field is `VALUE12`"]
-    #[inline(always)]
-    pub fn is_value12(&self) -> bool {
-        **self == PC11_A::VALUE12
-    }
-    #[doc = "Checks if the value of the field is `VALUE13`"]
-    #[inline(always)]
-    pub fn is_value13(&self) -> bool {
-        **self == PC11_A::VALUE13
-    }
-    #[doc = "Checks if the value of the field is `VALUE14`"]
-    #[inline(always)]
-    pub fn is_value14(&self) -> bool {
-        **self == PC11_A::VALUE14
-    }
-    #[doc = "Checks if the value of the field is `VALUE15`"]
-    #[inline(always)]
-    pub fn is_value15(&self) -> bool {
-        **self == PC11_A::VALUE15
-    }
-    #[doc = "Checks if the value of the field is `VALUE16`"]
-    #[inline(always)]
-    pub fn is_value16(&self) -> bool {
-        **self == PC11_A::VALUE16
-    }
-    #[doc = "Checks if the value of the field is `VALUE17`"]
-    #[inline(always)]
-    pub fn is_value17(&self) -> bool {
-        **self == PC11_A::VALUE17
-    }
-    #[doc = "Checks if the value of the field is `VALUE18`"]
-    #[inline(always)]
-    pub fn is_value18(&self) -> bool {
-        **self == PC11_A::VALUE18
-    }
-}
-impl core::ops::Deref for PC11_R {
-    type Target = crate::FieldReader<u8, PC11_A>;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        &self.0
-    }
-}
+pub type PC11_R = super::iocr0::PC0_R;
 #[doc = "Field `PC11` writer - Port Control for Port n Pin 8 to 11"]
 pub struct PC11_W<'a> {
     w: &'a mut W,
@@ -1069,93 +381,93 @@ impl<'a> PC11_W<'a> {
     }
     #[doc = "Input - No internal pull device active"]
     #[inline(always)]
-    pub fn value1(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE1)
+    pub fn input(self) -> &'a mut W {
+        self.variant(PC11_A::INPUT)
     }
     #[doc = "Input - Internal pull-down device active"]
     #[inline(always)]
-    pub fn value2(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE2)
+    pub fn input_pulldown(self) -> &'a mut W {
+        self.variant(PC11_A::INPUT_PULLDOWN)
     }
     #[doc = "Input - Internal pull-up device active"]
     #[inline(always)]
-    pub fn value3(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE3)
+    pub fn input_pullup(self) -> &'a mut W {
+        self.variant(PC11_A::INPUT_PULLUP)
     }
     #[doc = "Input - No internal pull device, Pn_OUTx = input value"]
     #[inline(always)]
-    pub fn value4(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE4)
+    pub fn input_sampled(self) -> &'a mut W {
+        self.variant(PC11_A::INPUT_SAMPLED)
     }
     #[doc = "Input inverted - No internal pull device active"]
     #[inline(always)]
-    pub fn value5(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE5)
+    pub fn input_inv(self) -> &'a mut W {
+        self.variant(PC11_A::INPUT_INV)
     }
     #[doc = "Input inverted - Internal pull-down device active"]
     #[inline(always)]
-    pub fn value6(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE6)
+    pub fn input_inv_pulldown(self) -> &'a mut W {
+        self.variant(PC11_A::INPUT_INV_PULLDOWN)
     }
     #[doc = "Input inverted - Internal pull-up device active"]
     #[inline(always)]
-    pub fn value7(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE7)
+    pub fn input_inv_pullup(self) -> &'a mut W {
+        self.variant(PC11_A::INPUT_INV_PULLUP)
     }
     #[doc = "Input inverted - No internal pull device, Pn_OUTx = input value"]
     #[inline(always)]
-    pub fn value8(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE8)
+    pub fn input_inv_sampled(self) -> &'a mut W {
+        self.variant(PC11_A::INPUT_INV_SAMPLED)
     }
     #[doc = "Output Push-Pull - General-purpose output"]
     #[inline(always)]
-    pub fn value9(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE9)
+    pub fn output(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT)
     }
     #[doc = "Output Push-Pull - Alternate output function 1"]
     #[inline(always)]
-    pub fn value10(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE10)
+    pub fn output_af1(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT_AF1)
     }
     #[doc = "Output Push-Pull - Alternate output function 2"]
     #[inline(always)]
-    pub fn value11(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE11)
+    pub fn output_af2(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT_AF2)
     }
     #[doc = "Output Push-Pull - Alternate output function 3"]
     #[inline(always)]
-    pub fn value12(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE12)
+    pub fn output_af3(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT_AF3)
     }
     #[doc = "Output Push-Pull - Alternate output function 4"]
     #[inline(always)]
-    pub fn value13(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE13)
+    pub fn output_af4(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT_AF4)
     }
     #[doc = "Output Open Drain - General-purpose output"]
     #[inline(always)]
-    pub fn value14(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE14)
+    pub fn output_od(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT_OD)
     }
     #[doc = "Output Open Drain - Alternate output function 1"]
     #[inline(always)]
-    pub fn value15(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE15)
+    pub fn output_od_af1(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT_OD_AF1)
     }
     #[doc = "Output Open Drain - Alternate output function 2"]
     #[inline(always)]
-    pub fn value16(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE16)
+    pub fn output_od_af2(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT_OD_AF2)
     }
     #[doc = "Output Open Drain - Alternate output function 3"]
     #[inline(always)]
-    pub fn value17(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE17)
+    pub fn output_od_af3(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT_OD_AF3)
     }
     #[doc = "Output Open Drain - Alternate output function 4"]
     #[inline(always)]
-    pub fn value18(self) -> &'a mut W {
-        self.variant(PC11_A::VALUE18)
+    pub fn output_od_af4(self) -> &'a mut W {
+        self.variant(PC11_A::OUTPUT_OD_AF4)
     }
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]

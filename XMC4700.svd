@@ -78942,93 +78942,94 @@
 							<msb>7</msb>
 							<access>read-write</access>
 							<enumeratedValues>
+								<name>values</name>
 								<enumeratedValue>
-									<name>value1</name>
+									<name>input</name>
 									<description>Input - No internal pull device active</description>
 									<value>#00000</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value2</name>
+									<name>input_pulldown</name>
 									<description>Input - Internal pull-down device active</description>
 									<value>#00001</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value3</name>
+									<name>input_pullup</name>
 									<description>Input - Internal pull-up device active</description>
 									<value>#00010</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value4</name>
+									<name>input_sampled</name>
 									<description>Input - No internal pull device, Pn_OUTx = input value</description>
 									<value>#00011</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value5</name>
+									<name>input_inv</name>
 									<description>Input inverted - No internal pull device active</description>
 									<value>#00100</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value6</name>
+									<name>input_inv_pulldown</name>
 									<description>Input inverted - Internal pull-down device active</description>
 									<value>#00101</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value7</name>
+									<name>input_inv_pullup</name>
 									<description>Input inverted - Internal pull-up device active</description>
 									<value>#00110</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value8</name>
+									<name>input_inv_sampled</name>
 									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
 									<value>#00111</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value9</name>
+									<name>output</name>
 									<description>Output Push-Pull - General-purpose output</description>
 									<value>#10000</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value10</name>
+									<name>output_af1</name>
 									<description>Output Push-Pull - Alternate output function 1</description>
 									<value>#10001</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value11</name>
+									<name>output_af2</name>
 									<description>Output Push-Pull - Alternate output function 2</description>
 									<value>#10010</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value12</name>
+									<name>output_af3</name>
 									<description>Output Push-Pull - Alternate output function 3</description>
 									<value>#10011</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value13</name>
+									<name>output_af4</name>
 									<description>Output Push-Pull - Alternate output function 4</description>
 									<value>#10100</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value14</name>
+									<name>output_od</name>
 									<description>Output Open Drain - General-purpose output</description>
 									<value>#11000</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value15</name>
+									<name>output_od_af1</name>
 									<description>Output Open Drain - Alternate output function 1</description>
 									<value>#11001</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value16</name>
+									<name>output_od_af2</name>
 									<description>Output Open Drain - Alternate output function 2</description>
 									<value>#11010</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value17</name>
+									<name>output_od_af3</name>
 									<description>Output Open Drain - Alternate output function 3</description>
 									<value>#11011</value>
 								</enumeratedValue>
 								<enumeratedValue>
-									<name>value18</name>
+									<name>output_od_af4</name>
 									<description>Output Open Drain - Alternate output function 4</description>
 									<value>#11100</value>
 								</enumeratedValue>
@@ -79040,98 +79041,7 @@
 							<lsb>11</lsb>
 							<msb>15</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC2</name>
@@ -79139,98 +79049,7 @@
 							<lsb>19</lsb>
 							<msb>23</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC3</name>
@@ -79238,98 +79057,7 @@
 							<lsb>27</lsb>
 							<msb>31</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="PC0.values"></enumeratedValues>
 						</field>
 					</fields>
 				</register>
@@ -79347,98 +79075,7 @@
 							<lsb>3</lsb>
 							<msb>7</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC5</name>
@@ -79446,98 +79083,7 @@
 							<lsb>11</lsb>
 							<msb>15</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC6</name>
@@ -79545,98 +79091,7 @@
 							<lsb>19</lsb>
 							<msb>23</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC7</name>
@@ -79644,98 +79099,7 @@
 							<lsb>27</lsb>
 							<msb>31</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 					</fields>
 				</register>
@@ -79753,98 +79117,7 @@
 							<lsb>3</lsb>
 							<msb>7</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC9</name>
@@ -79852,98 +79125,7 @@
 							<lsb>11</lsb>
 							<msb>15</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC10</name>
@@ -79951,98 +79133,7 @@
 							<lsb>19</lsb>
 							<msb>23</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC11</name>
@@ -80050,98 +79141,7 @@
 							<lsb>27</lsb>
 							<msb>31</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 					</fields>
 				</register>
@@ -80159,98 +79159,7 @@
 							<lsb>3</lsb>
 							<msb>7</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC13</name>
@@ -80258,98 +79167,7 @@
 							<lsb>11</lsb>
 							<msb>15</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC14</name>
@@ -80357,98 +79175,7 @@
 							<lsb>19</lsb>
 							<msb>23</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 						<field>
 							<name>PC15</name>
@@ -80456,98 +79183,7 @@
 							<lsb>27</lsb>
 							<msb>31</msb>
 							<access>read-write</access>
-							<enumeratedValues>
-								<enumeratedValue>
-									<name>value1</name>
-									<description>Input - No internal pull device active</description>
-									<value>#00000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value2</name>
-									<description>Input - Internal pull-down device active</description>
-									<value>#00001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value3</name>
-									<description>Input - Internal pull-up device active</description>
-									<value>#00010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value4</name>
-									<description>Input - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value5</name>
-									<description>Input inverted - No internal pull device active</description>
-									<value>#00100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value6</name>
-									<description>Input inverted - Internal pull-down device active</description>
-									<value>#00101</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value7</name>
-									<description>Input inverted - Internal pull-up device active</description>
-									<value>#00110</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value8</name>
-									<description>Input inverted - No internal pull device, Pn_OUTx = input value</description>
-									<value>#00111</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value9</name>
-									<description>Output Push-Pull - General-purpose output</description>
-									<value>#10000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value10</name>
-									<description>Output Push-Pull - Alternate output function 1</description>
-									<value>#10001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value11</name>
-									<description>Output Push-Pull - Alternate output function 2</description>
-									<value>#10010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value12</name>
-									<description>Output Push-Pull - Alternate output function 3</description>
-									<value>#10011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value13</name>
-									<description>Output Push-Pull - Alternate output function 4</description>
-									<value>#10100</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value14</name>
-									<description>Output Open Drain - General-purpose output</description>
-									<value>#11000</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value15</name>
-									<description>Output Open Drain - Alternate output function 1</description>
-									<value>#11001</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value16</name>
-									<description>Output Open Drain - Alternate output function 2</description>
-									<value>#11010</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value17</name>
-									<description>Output Open Drain - Alternate output function 3</description>
-									<value>#11011</value>
-								</enumeratedValue>
-								<enumeratedValue>
-									<name>value18</name>
-									<description>Output Open Drain - Alternate output function 4</description>
-									<value>#11100</value>
-								</enumeratedValue>
-							</enumeratedValues>
+							<enumeratedValues derivedFrom="IOCR0.PC0.values"></enumeratedValues>
 						</field>
 					</fields>
 				</register>

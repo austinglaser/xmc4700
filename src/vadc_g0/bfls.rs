@@ -1,11 +1,21 @@
-#[doc = "Writer for register BFLS"]
-pub type W = crate::W<u32, super::BFLS>;
-#[doc = "Register BFLS `reset()`'s with value 0"]
-impl crate::ResetValue for super::BFLS {
-    type Type = u32;
+#[doc = "Register `BFLS` writer"]
+pub struct W(crate::W<BFLS_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<BFLS_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<BFLS_SPEC>> for W {
+    fn from(writer: crate::W<BFLS_SPEC>) -> Self {
+        W(writer)
     }
 }
 #[doc = "Boundary Flag 0 Clear\n\nValue on reset: 0"]
@@ -22,7 +32,7 @@ impl From<BFC0_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `BFC0`"]
+#[doc = "Field `BFC0` writer - Boundary Flag 0 Clear"]
 pub struct BFC0_W<'a> {
     w: &'a mut W,
 }
@@ -30,9 +40,7 @@ impl<'a> BFC0_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: BFC0_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No action"]
     #[inline(always)]
@@ -57,7 +65,7 @@ impl<'a> BFC0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | ((value as u32) & 0x01);
+        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
         self.w
     }
 }
@@ -75,7 +83,7 @@ impl From<BFC1_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `BFC1`"]
+#[doc = "Field `BFC1` writer - Boundary Flag 1 Clear"]
 pub struct BFC1_W<'a> {
     w: &'a mut W,
 }
@@ -83,9 +91,7 @@ impl<'a> BFC1_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: BFC1_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No action"]
     #[inline(always)]
@@ -110,7 +116,7 @@ impl<'a> BFC1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | (((value as u32) & 0x01) << 1);
+        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
         self.w
     }
 }
@@ -128,7 +134,7 @@ impl From<BFC2_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `BFC2`"]
+#[doc = "Field `BFC2` writer - Boundary Flag 2 Clear"]
 pub struct BFC2_W<'a> {
     w: &'a mut W,
 }
@@ -136,9 +142,7 @@ impl<'a> BFC2_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: BFC2_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No action"]
     #[inline(always)]
@@ -163,7 +167,7 @@ impl<'a> BFC2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | (((value as u32) & 0x01) << 2);
+        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
         self.w
     }
 }
@@ -181,7 +185,7 @@ impl From<BFC3_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `BFC3`"]
+#[doc = "Field `BFC3` writer - Boundary Flag 3 Clear"]
 pub struct BFC3_W<'a> {
     w: &'a mut W,
 }
@@ -189,9 +193,7 @@ impl<'a> BFC3_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: BFC3_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No action"]
     #[inline(always)]
@@ -216,7 +218,7 @@ impl<'a> BFC3_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 3)) | (((value as u32) & 0x01) << 3);
+        self.w.bits = (self.w.bits & !(0x01 << 3)) | ((value as u32 & 0x01) << 3);
         self.w
     }
 }
@@ -234,7 +236,7 @@ impl From<BFS0_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `BFS0`"]
+#[doc = "Field `BFS0` writer - Boundary Flag 0 Set"]
 pub struct BFS0_W<'a> {
     w: &'a mut W,
 }
@@ -242,9 +244,7 @@ impl<'a> BFS0_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: BFS0_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No action"]
     #[inline(always)]
@@ -269,7 +269,7 @@ impl<'a> BFS0_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 16)) | (((value as u32) & 0x01) << 16);
+        self.w.bits = (self.w.bits & !(0x01 << 16)) | ((value as u32 & 0x01) << 16);
         self.w
     }
 }
@@ -287,7 +287,7 @@ impl From<BFS1_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `BFS1`"]
+#[doc = "Field `BFS1` writer - Boundary Flag 1 Set"]
 pub struct BFS1_W<'a> {
     w: &'a mut W,
 }
@@ -295,9 +295,7 @@ impl<'a> BFS1_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: BFS1_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No action"]
     #[inline(always)]
@@ -322,7 +320,7 @@ impl<'a> BFS1_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 17)) | (((value as u32) & 0x01) << 17);
+        self.w.bits = (self.w.bits & !(0x01 << 17)) | ((value as u32 & 0x01) << 17);
         self.w
     }
 }
@@ -340,7 +338,7 @@ impl From<BFS2_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `BFS2`"]
+#[doc = "Field `BFS2` writer - Boundary Flag 2 Set"]
 pub struct BFS2_W<'a> {
     w: &'a mut W,
 }
@@ -348,9 +346,7 @@ impl<'a> BFS2_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: BFS2_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No action"]
     #[inline(always)]
@@ -375,7 +371,7 @@ impl<'a> BFS2_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 18)) | (((value as u32) & 0x01) << 18);
+        self.w.bits = (self.w.bits & !(0x01 << 18)) | ((value as u32 & 0x01) << 18);
         self.w
     }
 }
@@ -393,7 +389,7 @@ impl From<BFS3_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `BFS3`"]
+#[doc = "Field `BFS3` writer - Boundary Flag 3 Set"]
 pub struct BFS3_W<'a> {
     w: &'a mut W,
 }
@@ -401,9 +397,7 @@ impl<'a> BFS3_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: BFS3_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No action"]
     #[inline(always)]
@@ -428,7 +422,7 @@ impl<'a> BFS3_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 19)) | (((value as u32) & 0x01) << 19);
+        self.w.bits = (self.w.bits & !(0x01 << 19)) | ((value as u32 & 0x01) << 19);
         self.w
     }
 }
@@ -472,5 +466,26 @@ impl W {
     #[inline(always)]
     pub fn bfs3(&mut self) -> BFS3_W {
         BFS3_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "Boundary Flag Software Register\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [bfls](index.html) module"]
+pub struct BFLS_SPEC;
+impl crate::RegisterSpec for BFLS_SPEC {
+    type Ux = u32;
+}
+#[doc = "`write(|w| ..)` method takes [bfls::W](W) writer structure"]
+impl crate::Writable for BFLS_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets BFLS to value 0"]
+impl crate::Resettable for BFLS_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }

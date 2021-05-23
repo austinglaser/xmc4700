@@ -1,11 +1,21 @@
-#[doc = "Writer for register TRBSCR"]
-pub type W = crate::W<u32, super::TRBSCR>;
-#[doc = "Register TRBSCR `reset()`'s with value 0"]
-impl crate::ResetValue for super::TRBSCR {
-    type Type = u32;
+#[doc = "Register `TRBSCR` writer"]
+pub struct W(crate::W<TRBSCR_SPEC>);
+impl core::ops::Deref for W {
+    type Target = crate::W<TRBSCR_SPEC>;
     #[inline(always)]
-    fn reset_value() -> Self::Type {
-        0
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+impl core::ops::DerefMut for W {
+    #[inline(always)]
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+impl core::convert::From<crate::W<TRBSCR_SPEC>> for W {
+    fn from(writer: crate::W<TRBSCR_SPEC>) -> Self {
+        W(writer)
     }
 }
 #[doc = "Clear Standard Receive Buffer Event\n\nValue on reset: 0"]
@@ -22,7 +32,7 @@ impl From<CSRBI_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `CSRBI`"]
+#[doc = "Field `CSRBI` writer - Clear Standard Receive Buffer Event"]
 pub struct CSRBI_W<'a> {
     w: &'a mut W,
 }
@@ -30,9 +40,7 @@ impl<'a> CSRBI_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: CSRBI_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No effect."]
     #[inline(always)]
@@ -57,7 +65,7 @@ impl<'a> CSRBI_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !0x01) | ((value as u32) & 0x01);
+        self.w.bits = (self.w.bits & !0x01) | (value as u32 & 0x01);
         self.w
     }
 }
@@ -75,7 +83,7 @@ impl From<CRBERI_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `CRBERI`"]
+#[doc = "Field `CRBERI` writer - Clear Receive Buffer Error Event"]
 pub struct CRBERI_W<'a> {
     w: &'a mut W,
 }
@@ -83,9 +91,7 @@ impl<'a> CRBERI_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: CRBERI_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No effect."]
     #[inline(always)]
@@ -110,7 +116,7 @@ impl<'a> CRBERI_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 1)) | (((value as u32) & 0x01) << 1);
+        self.w.bits = (self.w.bits & !(0x01 << 1)) | ((value as u32 & 0x01) << 1);
         self.w
     }
 }
@@ -128,7 +134,7 @@ impl From<CARBI_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `CARBI`"]
+#[doc = "Field `CARBI` writer - Clear Alternative Receive Buffer Event"]
 pub struct CARBI_W<'a> {
     w: &'a mut W,
 }
@@ -136,9 +142,7 @@ impl<'a> CARBI_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: CARBI_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No effect."]
     #[inline(always)]
@@ -163,7 +167,7 @@ impl<'a> CARBI_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 2)) | (((value as u32) & 0x01) << 2);
+        self.w.bits = (self.w.bits & !(0x01 << 2)) | ((value as u32 & 0x01) << 2);
         self.w
     }
 }
@@ -181,7 +185,7 @@ impl From<CSTBI_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `CSTBI`"]
+#[doc = "Field `CSTBI` writer - Clear Standard Transmit Buffer Event"]
 pub struct CSTBI_W<'a> {
     w: &'a mut W,
 }
@@ -189,9 +193,7 @@ impl<'a> CSTBI_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: CSTBI_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No effect."]
     #[inline(always)]
@@ -216,7 +218,7 @@ impl<'a> CSTBI_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 8)) | (((value as u32) & 0x01) << 8);
+        self.w.bits = (self.w.bits & !(0x01 << 8)) | ((value as u32 & 0x01) << 8);
         self.w
     }
 }
@@ -234,7 +236,7 @@ impl From<CTBERI_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `CTBERI`"]
+#[doc = "Field `CTBERI` writer - Clear Transmit Buffer Error Event"]
 pub struct CTBERI_W<'a> {
     w: &'a mut W,
 }
@@ -242,9 +244,7 @@ impl<'a> CTBERI_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: CTBERI_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No effect."]
     #[inline(always)]
@@ -269,7 +269,7 @@ impl<'a> CTBERI_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 9)) | (((value as u32) & 0x01) << 9);
+        self.w.bits = (self.w.bits & !(0x01 << 9)) | ((value as u32 & 0x01) << 9);
         self.w
     }
 }
@@ -287,7 +287,7 @@ impl From<CBDV_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `CBDV`"]
+#[doc = "Field `CBDV` writer - Clear Bypass Data Valid"]
 pub struct CBDV_W<'a> {
     w: &'a mut W,
 }
@@ -295,9 +295,7 @@ impl<'a> CBDV_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: CBDV_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No effect."]
     #[inline(always)]
@@ -322,7 +320,7 @@ impl<'a> CBDV_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 10)) | (((value as u32) & 0x01) << 10);
+        self.w.bits = (self.w.bits & !(0x01 << 10)) | ((value as u32 & 0x01) << 10);
         self.w
     }
 }
@@ -340,7 +338,7 @@ impl From<FLUSHRB_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `FLUSHRB`"]
+#[doc = "Field `FLUSHRB` writer - Flush Receive Buffer"]
 pub struct FLUSHRB_W<'a> {
     w: &'a mut W,
 }
@@ -348,9 +346,7 @@ impl<'a> FLUSHRB_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: FLUSHRB_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No effect."]
     #[inline(always)]
@@ -375,7 +371,7 @@ impl<'a> FLUSHRB_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 14)) | (((value as u32) & 0x01) << 14);
+        self.w.bits = (self.w.bits & !(0x01 << 14)) | ((value as u32 & 0x01) << 14);
         self.w
     }
 }
@@ -393,7 +389,7 @@ impl From<FLUSHTB_AW> for bool {
         variant as u8 != 0
     }
 }
-#[doc = "Write proxy for field `FLUSHTB`"]
+#[doc = "Field `FLUSHTB` writer - Flush Transmit Buffer"]
 pub struct FLUSHTB_W<'a> {
     w: &'a mut W,
 }
@@ -401,9 +397,7 @@ impl<'a> FLUSHTB_W<'a> {
     #[doc = r"Writes `variant` to the field"]
     #[inline(always)]
     pub fn variant(self, variant: FLUSHTB_AW) -> &'a mut W {
-        {
-            self.bit(variant.into())
-        }
+        self.bit(variant.into())
     }
     #[doc = "No effect."]
     #[inline(always)]
@@ -428,7 +422,7 @@ impl<'a> FLUSHTB_W<'a> {
     #[doc = r"Writes raw bits to the field"]
     #[inline(always)]
     pub fn bit(self, value: bool) -> &'a mut W {
-        self.w.bits = (self.w.bits & !(0x01 << 15)) | (((value as u32) & 0x01) << 15);
+        self.w.bits = (self.w.bits & !(0x01 << 15)) | ((value as u32 & 0x01) << 15);
         self.w
     }
 }
@@ -472,5 +466,26 @@ impl W {
     #[inline(always)]
     pub fn flushtb(&mut self) -> FLUSHTB_W {
         FLUSHTB_W { w: self }
+    }
+    #[doc = "Writes raw bits to the register."]
+    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
+        self.0.bits(bits);
+        self
+    }
+}
+#[doc = "Transmit/Receive Buffer Status Clear Register\n\nThis register you can [`write_with_zero`](crate::generic::Reg::write_with_zero), [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write). See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [trbscr](index.html) module"]
+pub struct TRBSCR_SPEC;
+impl crate::RegisterSpec for TRBSCR_SPEC {
+    type Ux = u32;
+}
+#[doc = "`write(|w| ..)` method takes [trbscr::W](W) writer structure"]
+impl crate::Writable for TRBSCR_SPEC {
+    type Writer = W;
+}
+#[doc = "`reset()` method sets TRBSCR to value 0"]
+impl crate::Resettable for TRBSCR_SPEC {
+    #[inline(always)]
+    fn reset_value() -> Self::Ux {
+        0
     }
 }
